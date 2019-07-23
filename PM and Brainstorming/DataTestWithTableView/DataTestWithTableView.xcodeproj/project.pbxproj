@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6289121122E67D20006EA505 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6289120F22E67D20006EA505 /* DetailViewController.swift */; };
+		6289121222E67D20006EA505 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6289121022E67D20006EA505 /* MasterTableViewController.swift */; };
 		62B24AC922E6559C00C8EE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B24AC822E6559C00C8EE34 /* AppDelegate.swift */; };
 		62B24AD022E6559E00C8EE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B24ACF22E6559E00C8EE34 /* Assets.xcassets */; };
 		62B24ADB22E655C300C8EE34 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B24ADA22E655C300C8EE34 /* DataModel.swift */; };
 		62B24AE022E655FC00C8EE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B24ADC22E655FC00C8EE34 /* Main.storyboard */; };
 		62B24AE122E655FC00C8EE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B24ADE22E655FC00C8EE34 /* LaunchScreen.storyboard */; };
-		62B24AE422E6560D00C8EE34 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B24AE222E6560D00C8EE34 /* DetailViewController.swift */; };
-		62B24AE522E6560D00C8EE34 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B24AE322E6560D00C8EE34 /* MasterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6289120F22E67D20006EA505 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "/Users/camsteezin/Desktop/Lighthouse/Final Project/Mastery/PM and Brainstorming/DataTestWithTableView/DataTestWithTableView/DetailViewController.swift"; sourceTree = "<absolute>"; };
+		6289121022E67D20006EA505 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MasterTableViewController.swift; path = "/Users/camsteezin/Desktop/Lighthouse/Final Project/Mastery/PM and Brainstorming/DataTestWithTableView/DataTestWithTableView/MasterTableViewController.swift"; sourceTree = "<absolute>"; };
 		62B24AC522E6559C00C8EE34 /* DataTestWithTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataTestWithTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B24AC822E6559C00C8EE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62B24ACF22E6559E00C8EE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,8 +26,6 @@
 		62B24ADA22E655C300C8EE34 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = ../../DataModel.swift; sourceTree = "<group>"; };
 		62B24ADD22E655FC00C8EE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../MasteryTableViewTest/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62B24ADF22E655FC00C8EE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../MasteryTableViewTest/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		62B24AE222E6560D00C8EE34 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../../MasteryTableViewTest/DetailViewController.swift; sourceTree = "<group>"; };
-		62B24AE322E6560D00C8EE34 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterTableViewController.swift; path = ../../MasteryTableViewTest/MasterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,9 @@
 		62B24AC722E6559C00C8EE34 /* DataTestWithTableView */ = {
 			isa = PBXGroup;
 			children = (
+				6289120F22E67D20006EA505 /* DetailViewController.swift */,
+				6289121022E67D20006EA505 /* MasterTableViewController.swift */,
 				62B24AC822E6559C00C8EE34 /* AppDelegate.swift */,
-				62B24AE222E6560D00C8EE34 /* DetailViewController.swift */,
-				62B24AE322E6560D00C8EE34 /* MasterTableViewController.swift */,
 				62B24ADC22E655FC00C8EE34 /* Main.storyboard */,
 				62B24ADE22E655FC00C8EE34 /* LaunchScreen.storyboard */,
 				62B24ACF22E6559E00C8EE34 /* Assets.xcassets */,
@@ -141,8 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62B24AE422E6560D00C8EE34 /* DetailViewController.swift in Sources */,
-				62B24AE522E6560D00C8EE34 /* MasterTableViewController.swift in Sources */,
+				6289121122E67D20006EA505 /* DetailViewController.swift in Sources */,
+				6289121222E67D20006EA505 /* MasterTableViewController.swift in Sources */,
 				62B24ADB22E655C300C8EE34 /* DataModel.swift in Sources */,
 				62B24AC922E6559C00C8EE34 /* AppDelegate.swift in Sources */,
 			);

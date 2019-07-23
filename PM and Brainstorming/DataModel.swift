@@ -12,9 +12,32 @@ enum DataModelError: Error {
 class manipulateElements {
     
 //    Get Complete Goals
+    func getCompleteGoals(user: User) -> [Goal]? {
+        
+        if let goalList = user.goalList {
+            var goals : [Goal] = []
+            for goalID in goalList {
+                goals.append(user.allElements[goalID] as! Goal)
+            }
+            return goals
+        }
+        
+        return nil
+    }
 //    Get Complete Plans
+    func getCompletePlans(user: User) -> [Goal]? {
+        
+        if let goalList = user.goalList {
+            var goals : [Goal] = []
+            for goalID in goalList {
+                goals.append(user.allElements[goalID] as! Goal)
+            }
+            return goals
+        }
+        
+        return nil
+    }
 //    Get Complete Tasks
-    
     
 //    Get Incomplete Goals
 //    Get Incomplete Plans

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DataTestWithTableView.xcodeproj">
+      location = "group:/Users/camsteezin/Desktop/Lighthouse/Final Project/Mastery/PM and Brainstorming/DataTestWithTableView/DataTestWithTableView/DetailViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/camsteezin/Desktop/Lighthouse/Final Project/Mastery/PM and Brainstorming/DataTestWithTableView/DataTestWithTableView/MasterTableViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
