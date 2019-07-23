@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var goals = [Goal]()
     var tasks = [Task]()
     var plans = [Plan]()
+    var planToSend: Plan?
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,12 +25,12 @@ class ViewController: UIViewController {
         //uncomment when loading the app for the first time
 //        initializeData()
 //        tableView.reloadData()
-        let fetchRequest = NSFetchRequest<Task>(entityName: "Task")
-        let sortDescriptor = NSSortDescriptor(key: "isComplete", ascending: false)
-        fetchRequest.sortDescriptors = [sortDescriptor]
+        let fetchRequest = NSFetchRequest<Plan>(entityName: "Plan")
+//        let sortDescriptor = NSSortDescriptor(key: "deadline", ascending: false)
+//        fetchRequest.sortDescriptors = [sortDescriptor]
         do {
-            let task =  try PersistenceService.context.fetch(fetchRequest)
-            self.tasks = task
+            let plans =  try PersistenceService.context.fetch(fetchRequest)
+            self.plans = plans
             self.tableView.reloadData()
         } catch {
             print("Oh no, there is no data to load")
@@ -49,7 +50,6 @@ class ViewController: UIViewController {
             let user = User(context: PersistenceService.context)
             user.id = UUID()
             user.name = firstTextField.text
-            user.goal?.append(self.goals[0].id!)
             PersistenceService.saveContext()
             self.user.append(user)
             })
@@ -62,14 +62,28 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tasks.count
+        return plans.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "addToCell", for: indexPath)
-        cell.textLabel?.text = tasks[indexPath.row].name
-        cell.detailTextLabel?.text = tasks[indexPath.row].taskDescription
+        let cell = tableView.dequeueReusableCell(withIdentifier: "addToCell", for: indexPath) as! CustomTableViewCell
+        cell.setPlan(plans[indexPath.row])
+
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        planToSend = plans[indexPath.row]
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            if let detailViewController = segue.destination as? DetailedViewController {
+                detailViewController.goal = planToSend
+            }
+        }
     }
     
     
@@ -84,9 +98,9 @@ extension ViewController {
         t1.taskDescription =  "complete first 5 videos"
         t1.isComplete =  false
         t1.dateOfBirth = Date.init(timeIntervalSinceNow: 52000) as NSDate
-        t1.dateOfActivity =  Date.init(timeIntervalSinceNow: 3600) as NSDate
+        t1.dateOfActivity =  nil
         t1.lengthOfActivity =  2
-        t1.deadline = Date.init(timeIntervalSinceNow: 3600) as NSDate
+        t1.deadline = Date.init(timeIntervalSinceNow: 64000) as NSDate
         t1.completionDate = nil
         t1.timeEstimate = 2
         t1.location = nil
@@ -146,7 +160,6 @@ extension ViewController {
         amirCourse.isComplete = false
         amirCourse.preRequisitePlans = nil
         amirCourse.deadline = [Date.init(timeIntervalSinceNow: 15000)]
-        amirCourse.taskList = [t1.id, t2.id] as? [UUID]
         amirCourse.purpose = "Learn to make an app"
         
         
@@ -157,7 +170,6 @@ extension ViewController {
         lhl.isComplete = false
         lhl.preRequisitePlans = nil
         lhl.deadline = [Date.init(timeIntervalSinceNow: 3600)]
-        lhl.taskList = [t3.id, t4.id] as? [UUID]
         lhl.purpose = "finish the bootcamp"
         
         
@@ -168,7 +180,6 @@ extension ViewController {
         goal1.isComplete = false
         goal1.dateOfBirth = Date.init() as NSDate
         goal1.deadline = []
-        goal1.planList = [amirCourse.id, lhl.id] as? [UUID]
         
         PersistenceService.saveContext()
         goals.append(goal1)

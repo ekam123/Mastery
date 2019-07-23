@@ -17,8 +17,25 @@ extension User {
         return NSFetchRequest<User>(entityName: "User")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var id: UUID?
-    @NSManaged public var goal: [UUID]?
+    @NSManaged public var name: String?
+    @NSManaged public var goals: NSSet?
+
+}
+
+// MARK: Generated accessors for goals
+extension User {
+
+    @objc(addGoalsObject:)
+    @NSManaged public func addToGoals(_ value: Goal)
+
+    @objc(removeGoalsObject:)
+    @NSManaged public func removeFromGoals(_ value: Goal)
+
+    @objc(addGoals:)
+    @NSManaged public func addToGoals(_ values: NSSet)
+
+    @objc(removeGoals:)
+    @NSManaged public func removeFromGoals(_ values: NSSet)
 
 }

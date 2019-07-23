@@ -17,13 +17,31 @@ extension Plan {
         return NSFetchRequest<Plan>(entityName: "Plan")
     }
 
-    @NSManaged public var id: UUID?
-    @NSManaged public var name: String?
     @NSManaged public var dateOfBirth: NSDate?
-    @NSManaged public var isComplete: Bool
-    @NSManaged public var preRequisitePlans: [UUID]?
     @NSManaged public var deadline: [Date]?
-    @NSManaged public var taskList: [UUID]?
+    @NSManaged public var id: UUID?
+    @NSManaged public var isComplete: Bool
+    @NSManaged public var name: String?
+    @NSManaged public var preRequisitePlans: [UUID]?
     @NSManaged public var purpose: String?
+    @NSManaged public var goal: Goal?
+    @NSManaged public var tasks: NSSet?
+
+}
+
+// MARK: Generated accessors for tasks
+extension Plan {
+
+    @objc(addTasksObject:)
+    @NSManaged public func addToTasks(_ value: Task)
+
+    @objc(removeTasksObject:)
+    @NSManaged public func removeFromTasks(_ value: Task)
+
+    @objc(addTasks:)
+    @NSManaged public func addToTasks(_ values: NSSet)
+
+    @objc(removeTasks:)
+    @NSManaged public func removeFromTasks(_ values: NSSet)
 
 }

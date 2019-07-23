@@ -16,14 +16,16 @@
 		06AB9E9E22E52A7B00E95B25 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9E9D22E52A7B00E95B25 /* TestData.swift */; };
 		06AB9ED022E537DD00E95B25 /* testing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9ECE22E537DD00E95B25 /* testing.xcdatamodeld */; };
 		06AB9ED222E6408100E95B25 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9ED122E6408100E95B25 /* PersistenceService.swift */; };
-		06AB9EE322E66CD800E95B25 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EDB22E66CD800E95B25 /* User+CoreDataClass.swift */; };
-		06AB9EE422E66CD800E95B25 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EDC22E66CD800E95B25 /* User+CoreDataProperties.swift */; };
-		06AB9EE522E66CD800E95B25 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EDD22E66CD800E95B25 /* Goal+CoreDataClass.swift */; };
-		06AB9EE622E66CD800E95B25 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EDE22E66CD800E95B25 /* Goal+CoreDataProperties.swift */; };
-		06AB9EE722E66CD800E95B25 /* Plan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EDF22E66CD800E95B25 /* Plan+CoreDataClass.swift */; };
-		06AB9EE822E66CD800E95B25 /* Plan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EE022E66CD800E95B25 /* Plan+CoreDataProperties.swift */; };
-		06AB9EE922E66CD800E95B25 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EE122E66CD800E95B25 /* Task+CoreDataClass.swift */; };
-		06AB9EEA22E66CD800E95B25 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EE222E66CD800E95B25 /* Task+CoreDataProperties.swift */; };
+		06AB9EEC22E691FB00E95B25 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EEB22E691FB00E95B25 /* DetailedViewController.swift */; };
+		06AB9EFD22E6A3E900E95B25 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EF522E6A3E900E95B25 /* Task+CoreDataClass.swift */; };
+		06AB9EFE22E6A3E900E95B25 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EF622E6A3E900E95B25 /* Task+CoreDataProperties.swift */; };
+		06AB9EFF22E6A3E900E95B25 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EF722E6A3E900E95B25 /* User+CoreDataClass.swift */; };
+		06AB9F0022E6A3E900E95B25 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EF822E6A3E900E95B25 /* User+CoreDataProperties.swift */; };
+		06AB9F0122E6A3E900E95B25 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EF922E6A3E900E95B25 /* Goal+CoreDataClass.swift */; };
+		06AB9F0222E6A3E900E95B25 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EFA22E6A3E900E95B25 /* Goal+CoreDataProperties.swift */; };
+		06AB9F0322E6A3E900E95B25 /* Plan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EFB22E6A3E900E95B25 /* Plan+CoreDataClass.swift */; };
+		06AB9F0422E6A3E900E95B25 /* Plan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9EFC22E6A3E900E95B25 /* Plan+CoreDataProperties.swift */; };
+		06AB9F0622E6A90100E95B25 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB9F0522E6A90100E95B25 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +52,16 @@
 		06AB9E9D22E52A7B00E95B25 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		06AB9ECF22E537DD00E95B25 /* testing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testing.xcdatamodel; sourceTree = "<group>"; };
 		06AB9ED122E6408100E95B25 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
-		06AB9EDB22E66CD800E95B25 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		06AB9EDC22E66CD800E95B25 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		06AB9EDD22E66CD800E95B25 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
-		06AB9EDE22E66CD800E95B25 /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		06AB9EDF22E66CD800E95B25 /* Plan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plan+CoreDataClass.swift"; sourceTree = "<group>"; };
-		06AB9EE022E66CD800E95B25 /* Plan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plan+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		06AB9EE122E66CD800E95B25 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
-		06AB9EE222E66CD800E95B25 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		06AB9EEB22E691FB00E95B25 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		06AB9EF522E6A3E900E95B25 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		06AB9EF622E6A3E900E95B25 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		06AB9EF722E6A3E900E95B25 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		06AB9EF822E6A3E900E95B25 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		06AB9EF922E6A3E900E95B25 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		06AB9EFA22E6A3E900E95B25 /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		06AB9EFB22E6A3E900E95B25 /* Plan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plan+CoreDataClass.swift"; sourceTree = "<group>"; };
+		06AB9EFC22E6A3E900E95B25 /* Plan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		06AB9F0522E6A90100E95B25 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,17 +103,19 @@
 		0638007C22E2642A00D31619 /* testing */ = {
 			isa = PBXGroup;
 			children = (
-				06AB9EDB22E66CD800E95B25 /* User+CoreDataClass.swift */,
-				06AB9EDC22E66CD800E95B25 /* User+CoreDataProperties.swift */,
-				06AB9EDD22E66CD800E95B25 /* Goal+CoreDataClass.swift */,
-				06AB9EDE22E66CD800E95B25 /* Goal+CoreDataProperties.swift */,
-				06AB9EDF22E66CD800E95B25 /* Plan+CoreDataClass.swift */,
-				06AB9EE022E66CD800E95B25 /* Plan+CoreDataProperties.swift */,
-				06AB9EE122E66CD800E95B25 /* Task+CoreDataClass.swift */,
-				06AB9EE222E66CD800E95B25 /* Task+CoreDataProperties.swift */,
+				06AB9EF522E6A3E900E95B25 /* Task+CoreDataClass.swift */,
+				06AB9EF622E6A3E900E95B25 /* Task+CoreDataProperties.swift */,
+				06AB9EF722E6A3E900E95B25 /* User+CoreDataClass.swift */,
+				06AB9EF822E6A3E900E95B25 /* User+CoreDataProperties.swift */,
+				06AB9EF922E6A3E900E95B25 /* Goal+CoreDataClass.swift */,
+				06AB9EFA22E6A3E900E95B25 /* Goal+CoreDataProperties.swift */,
+				06AB9EFB22E6A3E900E95B25 /* Plan+CoreDataClass.swift */,
+				06AB9EFC22E6A3E900E95B25 /* Plan+CoreDataProperties.swift */,
 				06AB9E9D22E52A7B00E95B25 /* TestData.swift */,
 				0638007D22E2642A00D31619 /* AppDelegate.swift */,
+				06AB9F0522E6A90100E95B25 /* CustomTableViewCell.swift */,
 				0638007F22E2642A00D31619 /* ViewController.swift */,
+				06AB9EEB22E691FB00E95B25 /* DetailedViewController.swift */,
 				06AB9ED122E6408100E95B25 /* PersistenceService.swift */,
 				0638008122E2642A00D31619 /* Main.storyboard */,
 				06AB9ECE22E537DD00E95B25 /* testing.xcdatamodeld */,
@@ -230,18 +236,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06AB9F0422E6A3E900E95B25 /* Plan+CoreDataProperties.swift in Sources */,
+				06AB9EEC22E691FB00E95B25 /* DetailedViewController.swift in Sources */,
 				06AB9ED222E6408100E95B25 /* PersistenceService.swift in Sources */,
+				06AB9F0222E6A3E900E95B25 /* Goal+CoreDataProperties.swift in Sources */,
+				06AB9EFD22E6A3E900E95B25 /* Task+CoreDataClass.swift in Sources */,
 				06AB9E9E22E52A7B00E95B25 /* TestData.swift in Sources */,
-				06AB9EE522E66CD800E95B25 /* Goal+CoreDataClass.swift in Sources */,
-				06AB9EE322E66CD800E95B25 /* User+CoreDataClass.swift in Sources */,
-				06AB9EE722E66CD800E95B25 /* Plan+CoreDataClass.swift in Sources */,
-				06AB9EE422E66CD800E95B25 /* User+CoreDataProperties.swift in Sources */,
-				06AB9EE622E66CD800E95B25 /* Goal+CoreDataProperties.swift in Sources */,
+				06AB9F0622E6A90100E95B25 /* CustomTableViewCell.swift in Sources */,
 				0638008022E2642A00D31619 /* ViewController.swift in Sources */,
-				06AB9EE822E66CD800E95B25 /* Plan+CoreDataProperties.swift in Sources */,
+				06AB9EFF22E6A3E900E95B25 /* User+CoreDataClass.swift in Sources */,
 				06AB9ED022E537DD00E95B25 /* testing.xcdatamodeld in Sources */,
-				06AB9EEA22E66CD800E95B25 /* Task+CoreDataProperties.swift in Sources */,
-				06AB9EE922E66CD800E95B25 /* Task+CoreDataClass.swift in Sources */,
+				06AB9F0122E6A3E900E95B25 /* Goal+CoreDataClass.swift in Sources */,
+				06AB9EFE22E6A3E900E95B25 /* Task+CoreDataProperties.swift in Sources */,
+				06AB9F0322E6A3E900E95B25 /* Plan+CoreDataClass.swift in Sources */,
+				06AB9F0022E6A3E900E95B25 /* User+CoreDataProperties.swift in Sources */,
 				0638007E22E2642A00D31619 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
