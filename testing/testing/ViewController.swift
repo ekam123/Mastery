@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //uncomment when loading the app for the first time
-//        initializeData()
-//        tableView.reloadData()
+        initializeData()
+        tableView.reloadData()
         let fetchRequest = NSFetchRequest<Plan>(entityName: "Plan")
 //        let sortDescriptor = NSSortDescriptor(key: "deadline", ascending: false)
 //        fetchRequest.sortDescriptors = [sortDescriptor]
@@ -161,6 +161,8 @@ extension ViewController {
         amirCourse.preRequisitePlans = nil
         amirCourse.deadline = [Date.init(timeIntervalSinceNow: 15000)]
         amirCourse.purpose = "Learn to make an app"
+        amirCourse.addToTasks(t3)
+        amirCourse.addToTasks(t4)
         
         
         let lhl = Plan(context: PersistenceService.context)

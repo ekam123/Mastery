@@ -19,6 +19,8 @@ class DetailedViewController: UIViewController {
             return
         }
         print(goal)
+        
+        print(goal.tasks!)
 
         // Do any additional setup after loading the view.
     }
