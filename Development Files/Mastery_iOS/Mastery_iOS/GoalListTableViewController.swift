@@ -51,7 +51,7 @@ class GoalListTableViewController: UITableViewController, UICollectionViewDataSo
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
-        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         view.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         view.layer.shadowOpacity = 1
         view.layer.shadowRadius = 1
@@ -66,7 +66,7 @@ class GoalListTableViewController: UITableViewController, UICollectionViewDataSo
         button = UIButton(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width / 2 , height: 50))
 //        button.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         button.setTitle("\(goals[section].name!.capitalized) ▴", for: .normal)
-        button.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+        button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
 //        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.center.x = tableView.center.x
         button.tag = section
@@ -75,12 +75,15 @@ class GoalListTableViewController: UITableViewController, UICollectionViewDataSo
         view.addSubview(button)
 //        button.addSubview(label)
        
+        tableView.frame.size.width * 0.15
         
-        button2 = UIButton(frame: CGRect(x: (tableView.frame.size.width) - (tableView.frame.size.width / 4 ) , y: 0, width: tableView.frame.size.width / 4, height: 50))
+        button2 = UIButton(frame: CGRect(x: (tableView.frame.size.width) - 50, y: 0, width: 50, height: 50))
 //        button2.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        button2.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
-        button2.setTitle("▻", for: .normal)
+        button2.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        button2.setTitle("›", for: .normal)
+//        button2.backgroundColor = UIColor.green
         button2.tag = section
+//        button2.contentHorizontalAlignment = .right
         button2.addTarget(self, action: #selector(showGoalDetails), for: .touchUpInside)
         view.addSubview(button2)
         return view
