@@ -18,7 +18,7 @@ class GoalListTableViewController: UITableViewController, UICollectionViewDataSo
     var goalToPassIndex: Int!
     var button: UIButton!
     var button2: UIButton!
-    
+   
     var sectionForCell: Int!
     
     override func viewDidLoad() {
@@ -51,7 +51,15 @@ class GoalListTableViewController: UITableViewController, UICollectionViewDataSo
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
-        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        if let color = goals[section].color {
+            view.backgroundColor = color
+        }
+//        else {
+//            goals[section].color = colorArray[Int(arc4random_uniform(UInt32(colorArray.count)))]
+//            view.backgroundColor = goals[section].color
+//        }
+        
+        
         view.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         view.layer.shadowOpacity = 1
         view.layer.shadowRadius = 1
@@ -66,6 +74,8 @@ class GoalListTableViewController: UITableViewController, UICollectionViewDataSo
         button = UIButton(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width / 2 , height: 50))
 //        button.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         button.setTitle("\(goals[section].name!.capitalized) ▴", for: .normal)
+        
+//        button.setTitleColor(goals[section].color, for: .normal)
         button.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
 //        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.center.x = tableView.center.x
@@ -164,6 +174,21 @@ class GoalListTableViewController: UITableViewController, UICollectionViewDataSo
         } else if segue.identifier == "showGoalDetails" {
             
         }
+    }
+}
+
+extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(red:   .random(),
+                       green: .random(),
+                       blue:  .random(),
+                       alpha: 1.0)
     }
 }
 
