@@ -57,10 +57,27 @@ class AddGoalDetailsViewController: UIViewController {
         goal.hoursEstimate = 10.0
         goal.hoursCompleted = 0.0
         goal.priority = 1
-        goal.color = colorArray[Int(arc4random_uniform(UInt32(colorArray.count)))]
         
+//        goal.color = colorArray[Int(arc4random_uniform(UInt32(colorArray.count)))]
+        goal.color = getColorFromUserDefaults(colorArray: colorArray)
         PersistenceService.saveContext()
        return goal
     }
 
+}
+
+func getColorFromUserDefaults(colorArray: [UIColor]) -> UIColor {
+    if let colorIndex  = UserDefaults.standard.object(forKey: "goalColorIndex") as? Int {
+        if colorIndex == colorArray.count - 1 {
+            UserDefaults.standard.set(0, forKey: "goalColorIndex")
+            return colorArray[0]
+        } else {
+            UserDefaults.standard.set(colorIndex + 1, forKey: "goalColorIndex")
+            return colorArray[colorIndex + 1]
+        }
+    }
+    else {
+        UserDefaults.standard.set(0, forKey: "goalColorIndex")
+        return colorArray[0]
+    }
 }
