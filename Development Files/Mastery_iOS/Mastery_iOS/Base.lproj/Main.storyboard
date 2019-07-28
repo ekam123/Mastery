@@ -13,7 +13,7 @@
         <!--Root View Controller-->
         <scene sceneID="abW-mL-RDY">
             <objects>
-                <tableViewController id="kJt-Jz-W4x" customClass="GoalListTableViewController" customModule="Mastery_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kJt-Jz-W4x" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RVs-9v-IVt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,16 +65,8 @@
                                                         <constraint firstItem="TiH-jG-auy" firstAttribute="leading" secondItem="YLb-uw-sfr" secondAttribute="leading" id="l4L-tI-TQ3"/>
                                                         <constraint firstItem="TiH-jG-auy" firstAttribute="top" secondItem="M6n-bm-Mhh" secondAttribute="bottom" constant="5.5" id="xeB-co-C3T"/>
                                                     </constraints>
-                                                    <connections>
-                                                        <outlet property="imageView" destination="M6n-bm-Mhh" id="V6H-UX-eCW"/>
-                                                        <outlet property="name" destination="TiH-jG-auy" id="VCW-8U-Vfc"/>
-                                                    </connections>
                                                 </collectionViewCell>
                                             </cells>
-                                            <connections>
-                                                <outlet property="dataSource" destination="kJt-Jz-W4x" id="TNA-u0-nUg"/>
-                                                <outlet property="delegate" destination="kJt-Jz-W4x" id="0mp-fb-s4L"/>
-                                            </connections>
                                         </collectionView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1n-lR-vzn">
                                             <rect key="frame" x="352" y="183" width="52" height="14.5"/>
@@ -104,9 +96,6 @@
                                         <constraint firstItem="pam-Db-XLU" firstAttribute="top" secondItem="d4l-qG-tJB" secondAttribute="top" constant="25" id="trH-fE-ioz"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="collectionView" destination="pam-Db-XLU" id="Q0x-GV-YDO"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

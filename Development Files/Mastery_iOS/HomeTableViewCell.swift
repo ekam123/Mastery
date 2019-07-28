@@ -11,7 +11,8 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet var name: UIView!
+    @IBOutlet var name: UILabel!
+    @IBOutlet var details: UIButton!
 //    var numberOfTasks: Int!
 
     override func awakeFromNib() {
