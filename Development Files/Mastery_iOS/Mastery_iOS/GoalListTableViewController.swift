@@ -170,7 +170,10 @@ class GoalListTableViewController: UIViewController, UITableViewDelegate, UITabl
 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "showTaskDetail", sender: self)
+        if indexPath.section == 1 {
+            performSegue(withIdentifier: "addNewTask", sender: self)
+
+        }
     }
 
 
@@ -178,9 +181,9 @@ class GoalListTableViewController: UIViewController, UITableViewDelegate, UITabl
         if segue.identifier == "showTaskDetail" {
             let controller = segue.destination as! DetailedTaskViewController
             controller.task = valueToPass
-        } else if segue.identifier == "addTask" {
-            let controller = segue.destination as! AddAnotherTaskViewController
-            controller.goal = goals[goalToPassIndex]
+        } else if segue.identifier == "addNewTask" {
+//            let controller = segue.destination as! AddAnotherTaskViewController
+//            controller.goal = goals[goalToPassIndex]
         } else if segue.identifier == "showGoalDetails" {
 
         }

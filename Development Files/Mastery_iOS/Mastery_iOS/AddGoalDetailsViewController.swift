@@ -8,12 +8,10 @@
 
 import UIKit
 
-class AddGoalDetailsViewController: UIViewController {
+class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var goalName: String?
-    var purpose:  String?
-    var purposeTwo: String?
-    var purposeThree: String?
+    
+    
     var colorArray: [UIColor] = [UIColor(red:0.49, green:0.47, blue:0.73, alpha:1.0),
                                  UIColor(red:0.91, green:0.44, blue:0.32, alpha:1.0),
                                  UIColor(red:0.35, green:0.76, blue:0.76, alpha:1.0),
@@ -22,6 +20,10 @@ class AddGoalDetailsViewController: UIViewController {
     
     @IBOutlet weak var dateOfBirth: UIDatePicker!
     @IBOutlet weak var deadline: UIDatePicker!
+    @IBOutlet var goalName: UITextField!
+    @IBOutlet var purpose: UITextView!
+    @IBOutlet var purposeTwo: UITextView!
+    @IBOutlet var purposeThree: UITextView!
     
 
     override func viewDidLoad() {
@@ -33,6 +35,19 @@ class AddGoalDetailsViewController: UIViewController {
 //        let purposeThree = purposeThree else {return}
 //        print(goalName, purpose, purposeTwo, purposeThree)
 
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.section {
+        case <#pattern#>:
+            <#code#>
+        default:
+            <#code#>
+        }
     }
     
 
@@ -48,8 +63,8 @@ class AddGoalDetailsViewController: UIViewController {
     func saveGoalData() -> Goal {
         let goal = Goal(context: PersistenceService.context)
         goal.id = UUID()
-        goal.name = goalName
-        goal.goalDescription = purpose
+        goal.name = goalName.text
+        goal.goalDescription = purpose.text
         goal.isComplete = false
         goal.dateOfBirth = dateOfBirth.date as NSDate
         goal.deadline?.append((deadline.date) as Date)

@@ -197,12 +197,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ml6-GF-4U3"/>
                     </view>
-                    <connections>
-                        <outlet property="goalName" destination="0qF-dx-rAl" id="ih4-lf-IOw"/>
-                        <outlet property="purpose" destination="V1B-kv-yT4" id="pTc-OH-Q8A"/>
-                        <outlet property="purposeThree" destination="em0-5r-rnN" id="Z6O-xm-Cn3"/>
-                        <outlet property="purposeTwo" destination="UWS-kN-7lP" id="T9o-N3-cRA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11V-0c-HiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,10 +263,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yKS-s9-nH5"/>
                     </view>
-                    <connections>
-                        <outlet property="dateOfBirth" destination="37L-2z-ec1" id="rr9-Wg-hTu"/>
-                        <outlet property="deadline" destination="XKb-M1-SbD" id="nOp-RR-Xdb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RM-nG-5hZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
