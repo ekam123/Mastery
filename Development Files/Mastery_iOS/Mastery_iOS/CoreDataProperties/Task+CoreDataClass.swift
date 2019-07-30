@@ -2,7 +2,7 @@
 //  Task+CoreDataClass.swift
 //  Mastery_iOS
 //
-//  Created by Cameron Mcleod on 2019-07-26.
+//  Created by Ekam Singh Dhaliwal on 2019-07-30.
 //  Copyright © 2019 Marina Mona June McPeak. All rights reserved.
 //
 //

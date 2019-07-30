@@ -70,14 +70,6 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
 
     }
     
-    func textViewDidChange(_ textView: UITextView) {
-        if let value = goalName.text {
-            if value.count > 10 {
-                
-            }
-        }
-    }
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let goalName = goalName.text,
             let rangeOfTextToReplace = Range(range, in: goalName) else {
@@ -149,7 +141,7 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
         goal.deadline = [tmpDate]
         goal.color = getColorFromUserDefaults(colorArray: colorArray)
         goal.tags = tagList
-//        PersistenceService.saveContext()
+        PersistenceService.saveContext()
        return goal
     }
 

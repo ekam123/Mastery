@@ -9,6 +9,8 @@
 import UIKit
 
 class TaskPriorityTableViewCell: UITableViewCell {
+    
+    var delegate: GoalPriorityTableCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +24,7 @@ class TaskPriorityTableViewCell: UITableViewCell {
     }
 
     @IBAction func selectPriority(_ sender: UISegmentedControl) {
+        self.delegate?.getPriority(priority: Int16(sender.selectedSegmentIndex + 1))
     }
     
 }

@@ -12,6 +12,7 @@ class TaskDeadlineTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellTitle: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    var delegate: DatePickerTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,5 +26,9 @@ class TaskDeadlineTableViewCell: UITableViewCell {
     }
 
     @IBAction func selectDate(_ sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, YYYY"
+        dateLabel.text = dateFormatter.string(from: sender.date)
+        self.delegate?.dateChanged(toDate: sender.date)
     }
 }

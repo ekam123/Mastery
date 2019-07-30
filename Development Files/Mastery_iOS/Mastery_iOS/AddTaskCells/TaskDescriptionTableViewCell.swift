@@ -8,14 +8,37 @@
 
 import UIKit
 
-class TaskDescriptionTableViewCell: UITableViewCell {
+class TaskDescriptionTableViewCell: UITableViewCell, UITextViewDelegate {
 
     
     @IBOutlet weak var taskDescription: UITextView!
     
+    var delegate: GoalDescriptionCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        taskDescription.delegate = self
+        taskDescription.frame.size.height = 60
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        guard let taskName = taskDescription.text,
+            let rangeOfTextToReplace = Range(range, in: taskName) else {
+                return false
+        }
+        let substringToReplace = taskName[rangeOfTextToReplace]
+        let count = taskName.count - substringToReplace.count + text.count
+        return count <= 200
+    }
+    
+    
+    
+    func textViewDidChange(_ textView: UITextView) {
+        self.delegate?.getValueForDescription(theDescription: taskDescription.text)
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
