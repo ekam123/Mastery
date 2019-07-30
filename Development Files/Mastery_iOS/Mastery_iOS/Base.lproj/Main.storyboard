@@ -250,9 +250,6 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Add A Task"/>
-                                <connections>
-                                    <segue destination="XxO-lZ-SJR" kind="show" identifier="addTask" id="FZa-h9-ScP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKF-bu-iCx">
                                 <rect key="frame" x="103" y="712" width="209" height="95"/>
@@ -623,9 +620,6 @@
                                 <rect key="frame" x="167" y="823" width="79" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="End"/>
-                                <connections>
-                                    <action selector="saveTask:" destination="XxO-lZ-SJR" eventType="touchUpInside" id="1hP-4u-TEj"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When would you like to complete this goal by?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xd-H9-5Py">
                                 <rect key="frame" x="29" y="146" width="374" height="21"/>
@@ -649,19 +643,8 @@
                         <viewLayoutGuide key="safeArea" id="sp4-hl-0IX"/>
                     </view>
                     <navigationItem key="navigationItem" id="VJu-QC-7Lh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gux-cg-2ok">
-                            <connections>
-                                <action selector="goBackHome:" destination="XxO-lZ-SJR" id="EjW-uJ-mJA"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gux-cg-2ok"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="deadline" destination="3P3-21-fGD" id="k03-ks-H0N"/>
-                        <outlet property="name" destination="3pb-GB-mYw" id="ecc-pa-zro"/>
-                        <outlet property="priority" destination="bJq-9Z-9UH" id="sn8-wH-8b1"/>
-                        <outlet property="taskDescription" destination="8ei-pM-cjQ" id="Bgf-jg-nfU"/>
-                        <outlet property="timeEstimate" destination="VJl-6e-t15" id="hZt-6G-JW6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKt-IU-vbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

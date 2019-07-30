@@ -8,19 +8,27 @@
 
 import UIKit
 
+protocol GoalDescriptionCellDelegate {
+    func getValueForDescription(theDescription: String)
+}
+
 class GoalDescriptionTableViewCell: UITableViewCell, UITextViewDelegate {
     
     
-    @IBOutlet weak var goalDescriptionTitle: UILabel!
+    var delegate: GoalDescriptionCellDelegate?
+    
+    @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var goalDescription: UITextView!
+
+    
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         goalDescription.delegate = self
-        
         goalDescription.frame.size.height = 60
+        
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
@@ -33,12 +41,21 @@ class GoalDescriptionTableViewCell: UITableViewCell, UITextViewDelegate {
         return count <= 200
     }
     
-   
 
+    
+    func textViewDidChange(_ textView: UITextView) {
+        self.delegate?.getValueForDescription(theDescription: goalDescription.text)
+
+        
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
     }
+    
 
 }

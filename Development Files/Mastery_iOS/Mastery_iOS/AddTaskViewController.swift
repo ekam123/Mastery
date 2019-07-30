@@ -12,16 +12,19 @@ class AddTaskViewController: UIViewController {
     
     var goal: Goal?
     
+    @IBOutlet weak var imageIconView: UIView!
     @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var priority: UISegmentedControl!
-    @IBOutlet weak var taskDescription: UITextView!
-    @IBOutlet weak var timeEstimate: UISegmentedControl!
-    @IBOutlet weak var deadline: UIDatePicker!
+    
+    var priority: UISegmentedControl!
+    var taskDescription: UITextView!
+    var timeEstimate: UISegmentedControl!
+    var deadline: UIDatePicker!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        guard let goal = goal else {return}
+        print(goal)
         // Do any additional setup after loading the view.
     }
     
@@ -42,6 +45,21 @@ class AddTaskViewController: UIViewController {
     
     @IBAction func goBackHome(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
+    }
+    
+    
+}
+
+extension AddTaskViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "taskDescriptionCell", for: indexPath)
+        return cell
     }
     
     

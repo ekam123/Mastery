@@ -1,25 +1,19 @@
 //
-//  GoalTagsTableViewCell.swift
+//  TaskAvailabilityTableViewCell.swift
 //  Mastery_iOS
 //
-//  Created by Ekam Singh Dhaliwal on 2019-07-28.
+//  Created by Ekam Singh Dhaliwal on 2019-07-29.
 //  Copyright © 2019 Marina Mona June McPeak. All rights reserved.
 //
 
 import UIKit
 
-class GoalTagsTableViewCell: UITableViewCell {
-    
-    
-    @IBOutlet weak var tagsTitle: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    private var tagList: [String] = [String]()
-    
+class TaskAvailabilityTableViewCell: UITableViewCell {
+
+    @IBOutlet var daysAvailable: [UIButton]!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

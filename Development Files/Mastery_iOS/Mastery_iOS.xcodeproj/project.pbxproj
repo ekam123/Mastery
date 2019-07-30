@@ -24,6 +24,13 @@
 		066036D522EEA42C00F0A452 /* GoalTagsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036D422EEA42C00F0A452 /* GoalTagsTableViewCell.swift */; };
 		066036D722EEA78B00F0A452 /* TagsCreatedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036D622EEA78B00F0A452 /* TagsCreatedCollectionViewCell.swift */; };
 		066036D922EEA7B200F0A452 /* TagsEmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036D822EEA7B200F0A452 /* TagsEmptyCollectionViewCell.swift */; };
+		066036DB22EFE2E500F0A452 /* TaskDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036DA22EFE2E500F0A452 /* TaskDescriptionTableViewCell.swift */; };
+		066036DE22EFE32000F0A452 /* TaskDeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036DD22EFE32000F0A452 /* TaskDeadlineTableViewCell.swift */; };
+		066036E022EFE45000F0A452 /* TaskPriorityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036DF22EFE44F00F0A452 /* TaskPriorityTableViewCell.swift */; };
+		066036E222EFE46B00F0A452 /* TaskAvailabilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036E122EFE46B00F0A452 /* TaskAvailabilityTableViewCell.swift */; };
+		066036E422EFE49C00F0A452 /* TaskTagsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036E322EFE49C00F0A452 /* TaskTagsTableViewCell.swift */; };
+		066036E622EFE4C300F0A452 /* TaskTagsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036E522EFE4C300F0A452 /* TaskTagsCollectionViewCell.swift */; };
+		066036E822EFE4D800F0A452 /* EmptyTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066036E722EFE4D800F0A452 /* EmptyTagCollectionViewCell.swift */; };
 		069B087622E7B21B000FD048 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B087522E7B21B000FD048 /* PersistenceService.swift */; };
 		629AC68722EBB295000C137C /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AC68122EBB295000C137C /* Goal+CoreDataClass.swift */; };
 		629AC68822EBB295000C137C /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AC68222EBB295000C137C /* Goal+CoreDataProperties.swift */; };
@@ -77,6 +84,13 @@
 		066036D422EEA42C00F0A452 /* GoalTagsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTagsTableViewCell.swift; sourceTree = "<group>"; };
 		066036D622EEA78B00F0A452 /* TagsCreatedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsCreatedCollectionViewCell.swift; sourceTree = "<group>"; };
 		066036D822EEA7B200F0A452 /* TagsEmptyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsEmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		066036DA22EFE2E500F0A452 /* TaskDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		066036DD22EFE32000F0A452 /* TaskDeadlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDeadlineTableViewCell.swift; sourceTree = "<group>"; };
+		066036DF22EFE44F00F0A452 /* TaskPriorityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskPriorityTableViewCell.swift; path = Mastery_iOS/AddTaskCells/TaskPriorityTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		066036E122EFE46B00F0A452 /* TaskAvailabilityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAvailabilityTableViewCell.swift; sourceTree = "<group>"; };
+		066036E322EFE49C00F0A452 /* TaskTagsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskTagsTableViewCell.swift; path = Mastery_iOS/AddTaskCells/TaskTagsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		066036E522EFE4C300F0A452 /* TaskTagsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTagsCollectionViewCell.swift; sourceTree = "<group>"; };
+		066036E722EFE4D800F0A452 /* EmptyTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTagCollectionViewCell.swift; sourceTree = "<group>"; };
 		069B087522E7B21B000FD048 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		629AC68122EBB295000C137C /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
 		629AC68222EBB295000C137C /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -154,6 +168,20 @@
 			path = AddGoalCells;
 			sourceTree = "<group>";
 		};
+		066036DC22EFE2F500F0A452 /* AddTaskCells */ = {
+			isa = PBXGroup;
+			children = (
+				066036E722EFE4D800F0A452 /* EmptyTagCollectionViewCell.swift */,
+				066036E522EFE4C300F0A452 /* TaskTagsCollectionViewCell.swift */,
+				066036E122EFE46B00F0A452 /* TaskAvailabilityTableViewCell.swift */,
+				066036DF22EFE44F00F0A452 /* TaskPriorityTableViewCell.swift */,
+				066036DA22EFE2E500F0A452 /* TaskDescriptionTableViewCell.swift */,
+				066036DD22EFE32000F0A452 /* TaskDeadlineTableViewCell.swift */,
+				066036E322EFE49C00F0A452 /* TaskTagsTableViewCell.swift */,
+			);
+			path = AddTaskCells;
+			sourceTree = "<group>";
+		};
 		629D230322EAAAAE005CF92D /* TodayFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +230,7 @@
 				066036CD22EEA34600F0A452 /* AddGoalCells */,
 				0652170122E7BBC700DC1C44 /* AddGoalDetailsViewController.swift */,
 				0652170922E7D22400DC1C44 /* AddTaskViewController.swift */,
+				066036DC22EFE2F500F0A452 /* AddTaskCells */,
 				06109A0122EA52D500A9DC7A /* DetailedTaskViewController.swift */,
 				06109A0322EA5CC900A9DC7A /* AddAnotherTaskViewController.swift */,
 				9CD53FC922E0007100210C0F /* Main.storyboard */,
@@ -368,20 +397,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066036E022EFE45000F0A452 /* TaskPriorityTableViewCell.swift in Sources */,
+				066036E222EFE46B00F0A452 /* TaskAvailabilityTableViewCell.swift in Sources */,
 				0652170A22E7D22400DC1C44 /* AddTaskViewController.swift in Sources */,
 				066036CF22EEA3D300F0A452 /* GoalDeadlineTableViewCell.swift in Sources */,
 				06109A0422EA5CC900A9DC7A /* AddAnotherTaskViewController.swift in Sources */,
 				0652170222E7BBC700DC1C44 /* AddGoalDetailsViewController.swift in Sources */,
 				066036D722EEA78B00F0A452 /* TagsCreatedCollectionViewCell.swift in Sources */,
 				0652171E22E91FF000DC1C44 /* HomeTableViewCell.swift in Sources */,
+				066036E622EFE4C300F0A452 /* TaskTagsCollectionViewCell.swift in Sources */,
 				066036D322EEA40D00F0A452 /* GoalPriorityTableViewCell.swift in Sources */,
 				066036D922EEA7B200F0A452 /* TagsEmptyCollectionViewCell.swift in Sources */,
+				066036E422EFE49C00F0A452 /* TaskTagsTableViewCell.swift in Sources */,
 				629AC68822EBB295000C137C /* Goal+CoreDataProperties.swift in Sources */,
+				066036DB22EFE2E500F0A452 /* TaskDescriptionTableViewCell.swift in Sources */,
+				066036DE22EFE32000F0A452 /* TaskDeadlineTableViewCell.swift in Sources */,
 				06109A0222EA52D500A9DC7A /* DetailedTaskViewController.swift in Sources */,
 				061099F422E94D3D00A9DC7A /* DynamicHeightCollectionView.swift in Sources */,
 				9CD53FC122E0007100210C0F /* AppDelegate.swift in Sources */,
 				065F8FF722EE4C2B00E9C514 /* AddTaskCollectionViewCell.swift in Sources */,
 				066036D522EEA42C00F0A452 /* GoalTagsTableViewCell.swift in Sources */,
+				066036E822EFE4D800F0A452 /* EmptyTagCollectionViewCell.swift in Sources */,
 				629AC68722EBB295000C137C /* Goal+CoreDataClass.swift in Sources */,
 				629AC68C22EBB295000C137C /* User+CoreDataProperties.swift in Sources */,
 				629AC68A22EBB295000C137C /* Task+CoreDataProperties.swift in Sources */,

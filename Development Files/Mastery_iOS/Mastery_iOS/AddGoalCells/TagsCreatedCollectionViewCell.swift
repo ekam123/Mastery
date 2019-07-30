@@ -10,4 +10,15 @@ import UIKit
 
 class TagsCreatedCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var tagName: UILabel!
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        tagName.layer.borderColor = UIColor.darkGray.cgColor;
+        tagName.layer.borderWidth = 1.0;
+        
+    }
+    
 }

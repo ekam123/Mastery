@@ -8,10 +8,14 @@
 
 import UIKit
 
+protocol GoalPriorityTableCellDelegate {
+    func getPriority(priority: Int16)
+}
+
 class GoalPriorityTableViewCell: UITableViewCell {
     
     @IBOutlet weak var priorityTitle: UILabel!
-    
+    var delegate: GoalPriorityTableCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +29,7 @@ class GoalPriorityTableViewCell: UITableViewCell {
     }
 
     @IBAction func getPriority(_ sender: UISegmentedControl) {
+        self.delegate?.getPriority(priority: Int16(sender.selectedSegmentIndex + 1))
     }
     
 }

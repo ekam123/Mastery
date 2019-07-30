@@ -8,11 +8,16 @@
 
 import UIKit
 
+protocol GoalHoursTableCellDelegate {
+    func getHours(hours: Float)
+}
+
 class GoalHoursTableViewCell: UITableViewCell {
 
     @IBOutlet weak var totalHoursTitle: UILabel!
     @IBOutlet weak var hours: UILabel!
     
+    var delegate: GoalHoursTableCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +31,10 @@ class GoalHoursTableViewCell: UITableViewCell {
     }
 
     @IBAction func getDate(_ sender: UISlider) {
+//        let roundedValue = round(sender.value / 5) * 5
+//        sender.value = roundedValue
+        hours.text = "\(sender.value)"
+        self.delegate?.getHours(hours: sender.value)
     }
     
 }

@@ -8,8 +8,42 @@
 
 import UIKit
 
-class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate{
+class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,  UITextFieldDelegate, DatePickerTableViewCellDelegate, GoalDescriptionCellDelegate, GoalHoursTableCellDelegate, GoalPriorityTableCellDelegate {
+   
+   
     
+    // protocol methods to pass values from custom table cells decided by user to Goal object 
+    func getValueForDescription(theDescription: String) {
+        tmpDescription = theDescription
+    }
+    
+    func dateChanged(toDate date: Date) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, YYYY"
+        tmpDateAsString = dateFormatter.string(from: date)
+        tmpDate = date
+    }
+    
+    func getHours(hours: Float) {
+        tmpHours = hours
+    }
+    
+    func getPriority(priority: Int16) {
+        tmpPriority = priority
+    }
+    
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var tagList: [String] = [String]()
+    
+    private var refreshCollectionView = 0 {
+        didSet {
+            let indexPath = IndexPath(item: 4, section: 0)
+            tableView.reloadRows(at: [indexPath], with: .top)
+        }
+    }
     
     var colorArray: [UIColor] = [UIColor(red:0.49, green:0.47, blue:0.73, alpha:1.0),
                                  UIColor(red:0.91, green:0.44, blue:0.32, alpha:1.0),
@@ -17,12 +51,14 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
                                  UIColor(red:0.55, green:0.70, blue:0.41, alpha:1.0),
                                  UIColor(red:0.96, green:0.74, blue:0.38, alpha:1.0)]
     
-    @IBOutlet weak var dateOfBirth: UIDatePicker!
-    @IBOutlet weak var deadline: UIDatePicker!
+    
     @IBOutlet var goalName: UITextField!
-    @IBOutlet var purpose: UITextView!
-    @IBOutlet var purposeTwo: UITextView!
-    @IBOutlet var purposeThree: UITextView!
+   
+    private var tmpDescription: String!
+    private var tmpDateAsString: String!
+    private var tmpDate: Date!
+    private var tmpHours: Float!
+    private var tmpPriority: Int16!
     
 
     override func viewDidLoad() {
@@ -31,11 +67,6 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
         
         goalName.delegate = self
         
-//        guard let goalName = goalName,
-//             let purpose = purpose,
-//             let purposeTwo = purposeTwo,
-//        let purposeThree = purposeThree else {return}
-//        print(goalName, purpose, purposeTwo, purposeThree)
 
     }
     
@@ -65,18 +96,24 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "goalDescriptionCell", for: indexPath) as! GoalDescriptionTableViewCell
+            cell.delegate = self
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "goalDeadlineCell", for: indexPath) as! GoalDeadlineTableViewCell
+           cell.delegate = self
+        
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "goalHoursCell", for: indexPath) as! GoalHoursTableViewCell
+            cell.delegate = self
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "goalPriorityCell", for: indexPath) as! GoalPriorityTableViewCell
+            cell.delegate = self
             return cell
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "goalTagsCell", for: indexPath) as! GoalTagsTableViewCell
+            cell.collectionView.reloadData()
             return cell
     
         default:
@@ -85,19 +122,11 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
         
     }
     
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        return cell
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addTask" {
             if let detailViewController = segue.destination as? AddTaskViewController {
@@ -111,21 +140,19 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
         let goal = Goal(context: PersistenceService.context)
         goal.id = UUID()
         goal.name = goalName.text
-        goal.goalDescription = purpose.text
+        goal.goalDescription = tmpDescription
         goal.isComplete = false
-        goal.dateOfBirth = dateOfBirth.date as NSDate
-        goal.deadline?.append((deadline.date) as Date)
-        goal.hoursEstimate = 10.0
+        goal.hoursEstimate = tmpHours
         goal.hoursCompleted = 0.0
-        goal.priority = 1
-        //        goal.color = colorArray[Int(arc4random_uniform(UInt32(colorArray.count)))]
+        goal.priority = tmpPriority
+        goal.dateOfBirth = Date() as NSDate
+        goal.deadline = [tmpDate]
         goal.color = getColorFromUserDefaults(colorArray: colorArray)
-        
-        PersistenceService.saveContext()
+        goal.tags = tagList
+//        PersistenceService.saveContext()
        return goal
     }
 
-    
     
     func getColorFromUserDefaults(colorArray: [UIColor]) -> UIColor {
         if let colorIndex  = UserDefaults.standard.object(forKey: "goalColorIndex") as? Int {
@@ -143,10 +170,42 @@ class AddGoalDetailsViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     
+    
 }
 
 
+extension AddGoalDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource, TagsEmptyCollectionCellDelegate{
+    
+    
+    func addTagToList(tagName: String) {
+        tagList.append(tagName)
+        print(tagList)
+        if refreshCollectionView >= 2 {
+            refreshCollectionView = 0
+        } else {
+            refreshCollectionView += 1
+        }
+        
 
-
-
-
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tagList.count + 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if indexPath.row < tagList.count {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "goalsCreatedTagCell", for: indexPath) as! TagsCreatedCollectionViewCell
+            cell.tagName.text = tagList[indexPath.row]
+            return cell
+        } else {
+            
+        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "goalsEmptyTagCell", for: indexPath) as! TagsEmptyCollectionViewCell
+            cell.delegate = self
+        return cell
+    }
+    
+}

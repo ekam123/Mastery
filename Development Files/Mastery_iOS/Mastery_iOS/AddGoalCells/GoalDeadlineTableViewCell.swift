@@ -8,12 +8,21 @@
 
 import UIKit
 
+protocol DatePickerTableViewCellDelegate {
+    func dateChanged(toDate date: Date)
+}
+
+
 class GoalDeadlineTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var goalDeadlineTitle: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    
+    var delegate: DatePickerTableViewCellDelegate?
     
     
     override func awakeFromNib() {
@@ -24,9 +33,14 @@ class GoalDeadlineTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
+    
+    
 
     @IBAction func selectDate(_ sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, YYYY"
+        date.text = dateFormatter.string(from: sender.date)
+        self.delegate?.dateChanged(toDate: sender.date)
     }
 }
