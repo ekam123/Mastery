@@ -872,7 +872,7 @@
                         <viewLayoutGuide key="safeArea" id="tBO-Qk-T5B"/>
                     </view>
                     <connections>
-                        <outlet property="artboard" destination="GgG-R0-ahH" id="bH2-Zk-FY6"/>
+                        <outlet property="artboard" destination="GgG-R0-ahH" id="coK-6O-RuN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88W-dZ-OQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
