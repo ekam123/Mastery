@@ -796,9 +796,6 @@
                                                                 <constraint firstItem="5AX-sA-Dnj" firstAttribute="centerY" secondItem="hYy-mV-Bcc" secondAttribute="centerY" id="ykE-4Z-ZlE"/>
                                                             </constraints>
                                                             <size key="customSize" width="133" height="53"/>
-                                                            <connections>
-                                                                <outlet property="createNewTag" destination="5AX-sA-Dnj" id="cp5-aa-AKY"/>
-                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                     <connections>
@@ -1319,7 +1316,7 @@
         <image name="SwapScreen_Icon" width="43" height="34"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fi7-Y8-3kV"/>
+        <segue reference="cWD-q6-v4N"/>
         <segue reference="WS7-7e-ods"/>
         <segue reference="GS3-4c-Z7q"/>
     </inferredMetricsTieBreakers>

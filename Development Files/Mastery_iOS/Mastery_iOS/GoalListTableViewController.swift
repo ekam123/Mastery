@@ -158,7 +158,7 @@ class GoalListTableViewController: UIViewController, UITableViewDelegate, UITabl
             if let values = selectedGoal.tasks?.allObjects {
                 let value = values[indexPath.row] as! Task
                 cell.iconWithLabel.taskName.text = value.name
-                cell.iconWithLabel.taskIcon.iconImage.image = UIImage(data: value.image! as Data)
+//                cell.iconWithLabel.taskIcon.iconImage.image = UIImage(data: value.image! as Data)
                 cell.iconWithLabel.taskIcon.iconImage = UIImageView(image: UIImage(named: "falcon"))
                 
                 return cell

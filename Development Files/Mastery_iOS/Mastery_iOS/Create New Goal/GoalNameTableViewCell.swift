@@ -16,46 +16,49 @@ class GoalNameTableViewCell: UITableViewCell, UITextFieldDelegate {
 
    
     
-    @IBOutlet weak var goalName: UITextField!
+    @IBOutlet var name: UITextField!
     
      var delegate: GoalNameCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        goalName.delegate = self
+        name.delegate = self
         
     }
     
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let goalName = goalName.text,
-            let rangeOfTextToReplace = Range(range, in: goalName) else {
+        guard let name = name.text,
+            let rangeOfTextToReplace = Range(range, in: name) else {
                 return false
         }
-        let substringToReplace = goalName[rangeOfTextToReplace]
-        let count = goalName.count - substringToReplace.count + string.count
+        let substringToReplace = name[rangeOfTextToReplace]
+        let count = name.count - substringToReplace.count + string.count
         return count <= 30
     }
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
+       
         super.setSelected(selected, animated: animated)
         
     }
 
     
     func textFieldDidChange(_ textField: UITextField) {
+        name.resignFirstResponder()
         print("Is this sucker being called?")
+        self.delegate?.getValueForName(theName: name.text!)
         
         
     }
     
+  
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("OMGOMGOMGOMGOMGOMGOMGGOM")
-        self.delegate?.getValueForName(theName: goalName.text!)
-        return false
+        print(textField)
+        return true
     }
-    
     
     
 }

@@ -473,7 +473,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="goalName" destination="JPC-oQ-mRz" id="mab-ss-rhh"/>
+                                            <outlet property="name" destination="JPC-oQ-mRz" id="Aly-Dh-08R"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalDescriptionCell" id="Vby-Ox-APJ" customClass="GoalDescriptionTableViewCell" customModule="Mastery_iOS" customModuleProvider="target">
@@ -2538,7 +2538,6 @@
         <image name="SwapScreen_Icon" width="43" height="34"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6pq-9Z-mSK"/>
         <segue reference="Hxj-al-Cbq"/>
         <segue reference="I2e-AS-kPU"/>
     </inferredMetricsTieBreakers>
