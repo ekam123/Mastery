@@ -4,7 +4,9 @@
 <dict>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>wizard.png</string>
+		<string>icon.png</string>
+		<string>icon@2x.png</string>
+		<string>icon@3x.png</string>
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
