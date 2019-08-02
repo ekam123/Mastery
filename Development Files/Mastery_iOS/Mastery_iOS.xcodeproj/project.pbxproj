@@ -1445,7 +1445,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 79VHH58USY;
+				DEVELOPMENT_TEAM = 69CPQG929Z;
 				INFOPLIST_FILE = TaskIcons/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = Lighthouse.TaskIcons;
@@ -1461,7 +1461,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 79VHH58USY;
+				DEVELOPMENT_TEAM = 69CPQG929Z;
 				INFOPLIST_FILE = TaskIcons/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = Lighthouse.TaskIcons;
@@ -1476,7 +1476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79VHH58USY;
+				DEVELOPMENT_TEAM = 69CPQG929Z;
 				INFOPLIST_FILE = MasteryNotificationExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1495,7 +1495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79VHH58USY;
+				DEVELOPMENT_TEAM = 69CPQG929Z;
 				INFOPLIST_FILE = MasteryNotificationExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

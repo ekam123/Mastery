@@ -78,7 +78,7 @@ public class ArtboardView: UIView {
         masteryIcon.layer.shadowOffset = CGSize(width: 0, height: 0)
         masteryIcon.layer.shadowColor = UIColor.clear.cgColor
         masteryIcon.layer.shadowOpacity = 1
-        masteryIcon.layer.position = CGPoint(x: 204.59, y: 373.66)
+        masteryIcon.layer.position = CGPoint(x: 190, y: 373.66)
         masteryIcon.layer.bounds = CGRect(x: 0, y: 0, width: 259.83, height: 250.98)
         masteryIcon.layer.masksToBounds = true
     }
