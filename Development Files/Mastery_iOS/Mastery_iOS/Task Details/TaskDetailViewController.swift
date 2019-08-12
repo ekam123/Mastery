@@ -37,7 +37,7 @@ class TaskDetailViewController : UIViewController, UITableViewDelegate, UITableV
             return 250
         }
         
-        return 80
+        return 90
         
     }
     
@@ -61,13 +61,21 @@ class TaskDetailViewController : UIViewController, UITableViewDelegate, UITableV
                 return cell
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "taskDescriptionCell", for: indexPath) as! TaskDetailDescriptionTableViewCell
+                print(task.notes)
                 
+                var tempString = ""
                 if let notes = task.notes {
                     for note in notes {
-                        let tempString = task.description + "\n" + note
-                        cell.detailTextLabel?.text = tempString
+                        tempString = tempString + "\n" + note
                     }
                 }
+            
+                guard let taskD = task.taskDescription else {
+                    cell.taskDescription.text = task.name! + tempString
+                    return cell
+                }
+                
+                cell.taskDescription.text = taskD + tempString
                 
                 return cell
             case 2:
@@ -78,7 +86,7 @@ class TaskDetailViewController : UIViewController, UITableViewDelegate, UITableV
             case 3:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "taskDeadlineCell", for: indexPath) as! TaskDetailDeadlineTableViewCell
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "MMMM dd, YYYY"
+                dateFormatter.dateFormat = "MMM dd, YYYY"
                 cell.taskDeadline.text = dateFormatter.string(for: task.deadline)
                 cell.deadlineTitle.textColor = tintColor
                 return cell
@@ -111,6 +119,7 @@ class TaskDetailViewController : UIViewController, UITableViewDelegate, UITableV
                 return cell
             case 6:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "taskTagsCell", for: indexPath) as! TaskDetailTagsTableViewCell
+                cell.tagsTitle.textColor = tintColor
                 return cell
             default:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "taskDescriptionCell", for: indexPath) as! TaskDetailDescriptionTableViewCell
@@ -151,12 +160,14 @@ class TaskDetailViewController : UIViewController, UITableViewDelegate, UITableV
 extension TaskDetailViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let count = task?.tags?.count else {return 0}
+        print(count)
         return count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "displayTaskTags", for: indexPath) as! TagCreatedTaskDetailCollectionViewCell
         guard let tagname = task?.tags?[indexPath.row] else {return cell}
+        print(tagname)
         cell.tagName.text = tagname
         return cell
         
