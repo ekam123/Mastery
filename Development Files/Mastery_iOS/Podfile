@@ -1,0 +1,36 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Mastery_iOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Charts'
+  # Pods for Mastery_iOS
+
+  target 'Mastery_iOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Mastery_iOSUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'MasteryNotificationExtension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MasteryNotificationExtension
+
+end
+
+target 'TaskIcons' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TaskIcons
+
+end

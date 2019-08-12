@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006C7C9D9C7281288537AACF /* Pods_MasteryNotificationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB5B1655B26288CA87023A3 /* Pods_MasteryNotificationExtension.framework */; };
 		061099F422E94D3D00A9DC7A /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061099F322E94D3D00A9DC7A /* DynamicHeightCollectionView.swift */; };
 		06109A0222EA52D500A9DC7A /* DetailedTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06109A0122EA52D500A9DC7A /* DetailedTaskViewController.swift */; };
 		065216EA22E7B66300DC1C44 /* Mastery_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 065216E822E7B66300DC1C44 /* Mastery_iOS.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 		069C534522F0CD7B000ECBE0 /* TaskAvailabilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C533E22F0CD7B000ECBE0 /* TaskAvailabilityTableViewCell.swift */; };
 		069C534922F0D2AF000ECBE0 /* TestAddingGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C534822F0D2AE000ECBE0 /* TestAddingGoals.storyboard */; };
 		069C534B22F0D418000ECBE0 /* AddTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C534A22F0D418000ECBE0 /* AddTaskCollectionViewCell.swift */; };
+		554CC8B6A794CC95949B416A /* Pods_Mastery_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA2E534B13AFB4EE5A3C4E8 /* Pods_Mastery_iOSTests.framework */; };
 		62082B5822EF892D00196FA8 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62082B5722EF892D00196FA8 /* OverviewViewController.swift */; };
 		6226936222EFF01900A0A642 /* TaskIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6226935C22EFEFE800A0A642 /* TaskIcons.bundle */; };
 		6226936D22EFF10200A0A642 /* SelectIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226936C22EFF10200A0A642 /* SelectIconCell.swift */; };
@@ -177,6 +179,8 @@
 		62A3E5EE22F1864400834751 /* UIView+FixInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A3E5ED22F1864400834751 /* UIView+FixInView.swift */; };
 		62A3E5F022F1880200834751 /* TestIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A3E5EF22F1880200834751 /* TestIconViewController.swift */; };
 		62F57E5922EFEEF800AE96BB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F57E5822EFEEF800AE96BB /* HomeTableViewCell.swift */; };
+		64EF0C865B9863427031A842 /* Pods_Mastery_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C1C6ED60CC4E23C040C157 /* Pods_Mastery_iOS.framework */; };
+		67536E0764573CB889BEDEF3 /* Pods_Mastery_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7528FEC7D0437164D90CF11 /* Pods_Mastery_iOSUITests.framework */; };
 		9C0A766E22F0EACE00B0B529 /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A766D22F0EACE00B0B529 /* GoalDetailViewController.swift */; };
 		9C0A767122F0EB3200B0B529 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A767022F0EB3200B0B529 /* TaskDetailViewController.swift */; };
 		9C2908AC22ED14CA0021017D /* TaskIconWithLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2908AB22ED14CA0021017D /* TaskIconWithLabel.xib */; };
@@ -209,6 +213,7 @@
 		9CD53FD022E0007200210C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD53FCE22E0007200210C0F /* LaunchScreen.storyboard */; };
 		9CD53FDB22E0007200210C0F /* Mastery_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD53FDA22E0007200210C0F /* Mastery_iOSTests.swift */; };
 		9CD53FE622E0007200210C0F /* Mastery_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD53FE522E0007200210C0F /* Mastery_iOSUITests.swift */; };
+		CE74EF6BCE2C7259611810D3 /* Pods_TaskIcons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3813AF9B15E352A50495BD76 /* Pods_TaskIcons.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +262,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03F335D06C865E5B42A3E0D8 /* Pods-Mastery_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastery_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mastery_iOSUITests/Pods-Mastery_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		061099F322E94D3D00A9DC7A /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
 		06109A0122EA52D500A9DC7A /* DetailedTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedTaskViewController.swift; sourceTree = "<group>"; };
 		065216E922E7B66300DC1C44 /* Mastery_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mastery_iOS.xcdatamodel; sourceTree = "<group>"; };
@@ -281,6 +287,9 @@
 		069C533E22F0CD7B000ECBE0 /* TaskAvailabilityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskAvailabilityTableViewCell.swift; sourceTree = "<group>"; };
 		069C534822F0D2AE000ECBE0 /* TestAddingGoals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestAddingGoals.storyboard; sourceTree = "<group>"; };
 		069C534A22F0D418000ECBE0 /* AddTaskCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		3813AF9B15E352A50495BD76 /* Pods_TaskIcons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskIcons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E1015624E841E3FB12DD47 /* Pods-Mastery_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastery_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Mastery_iOSTests/Pods-Mastery_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C50C7EEF18306CC9421EF4A /* Pods-TaskIcons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskIcons.release.xcconfig"; path = "Target Support Files/Pods-TaskIcons/Pods-TaskIcons.release.xcconfig"; sourceTree = "<group>"; };
 		62082B5722EF892D00196FA8 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		6226935C22EFEFE800A0A642 /* TaskIcons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskIcons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6226935E22EFEFE800A0A642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -429,6 +438,7 @@
 		62A3E5ED22F1864400834751 /* UIView+FixInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FixInView.swift"; sourceTree = "<group>"; };
 		62A3E5EF22F1880200834751 /* TestIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIconViewController.swift; sourceTree = "<group>"; };
 		62F57E5822EFEEF800AE96BB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		641B2AAA341E24AF500EE845 /* Pods-MasteryNotificationExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasteryNotificationExtension.debug.xcconfig"; path = "Target Support Files/Pods-MasteryNotificationExtension/Pods-MasteryNotificationExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		9C0A766D22F0EACE00B0B529 /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
 		9C0A767022F0EB3200B0B529 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		9C2908AB22ED14CA0021017D /* TaskIconWithLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskIconWithLabel.xib; sourceTree = "<group>"; };
@@ -467,6 +477,16 @@
 		9CD53FE122E0007200210C0F /* Mastery_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mastery_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD53FE522E0007200210C0F /* Mastery_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastery_iOSUITests.swift; sourceTree = "<group>"; };
 		9CD53FE722E0007200210C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B4FB0EA30CFD3838597A32 /* Pods-Mastery_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastery_iOS.release.xcconfig"; path = "Target Support Files/Pods-Mastery_iOS/Pods-Mastery_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A7528FEC7D0437164D90CF11 /* Pods_Mastery_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mastery_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2394AA9297862BBBB3FF60 /* Pods-Mastery_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastery_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Mastery_iOSTests/Pods-Mastery_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAB5B1655B26288CA87023A3 /* Pods_MasteryNotificationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasteryNotificationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1650694062D4908EEA64B0C /* Pods-Mastery_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastery_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Mastery_iOSUITests/Pods-Mastery_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C2C1C6ED60CC4E23C040C157 /* Pods_Mastery_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mastery_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45F9D35044907419D8F62D9 /* Pods-MasteryNotificationExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasteryNotificationExtension.release.xcconfig"; path = "Target Support Files/Pods-MasteryNotificationExtension/Pods-MasteryNotificationExtension.release.xcconfig"; sourceTree = "<group>"; };
+		D65EA6623AB7C4C8646F9FCB /* Pods-TaskIcons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskIcons.debug.xcconfig"; path = "Target Support Files/Pods-TaskIcons/Pods-TaskIcons.debug.xcconfig"; sourceTree = "<group>"; };
+		E20EF1118DCBFCA2DF81AF05 /* Pods-Mastery_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastery_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Mastery_iOS/Pods-Mastery_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FDA2E534B13AFB4EE5A3C4E8 /* Pods_Mastery_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mastery_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,6 +496,15 @@
 			files = (
 				6226937B22EFFF3900A0A642 /* UserNotificationsUI.framework in Frameworks */,
 				6226937922EFFF3900A0A642 /* UserNotifications.framework in Frameworks */,
+				006C7C9D9C7281288537AACF /* Pods_MasteryNotificationExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A0B3F6FCE34451EAD65F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE74EF6BCE2C7259611810D3 /* Pods_TaskIcons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +512,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EF0C865B9863427031A842 /* Pods_Mastery_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +520,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554CC8B6A794CC95949B416A /* Pods_Mastery_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +528,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67536E0764573CB889BEDEF3 /* Pods_Mastery_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +578,24 @@
 				9C0A766B22F0E59800B0B529 /* Tags Collection View */,
 			);
 			path = "Create First Task";
+			sourceTree = "<group>";
+		};
+		60B6D2AB9524C12143C9E30E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				641B2AAA341E24AF500EE845 /* Pods-MasteryNotificationExtension.debug.xcconfig */,
+				C45F9D35044907419D8F62D9 /* Pods-MasteryNotificationExtension.release.xcconfig */,
+				E20EF1118DCBFCA2DF81AF05 /* Pods-Mastery_iOS.debug.xcconfig */,
+				A3B4FB0EA30CFD3838597A32 /* Pods-Mastery_iOS.release.xcconfig */,
+				59E1015624E841E3FB12DD47 /* Pods-Mastery_iOSTests.debug.xcconfig */,
+				AA2394AA9297862BBBB3FF60 /* Pods-Mastery_iOSTests.release.xcconfig */,
+				03F335D06C865E5B42A3E0D8 /* Pods-Mastery_iOSUITests.debug.xcconfig */,
+				B1650694062D4908EEA64B0C /* Pods-Mastery_iOSUITests.release.xcconfig */,
+				D65EA6623AB7C4C8646F9FCB /* Pods-TaskIcons.debug.xcconfig */,
+				5C50C7EEF18306CC9421EF4A /* Pods-TaskIcons.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		62082B5622EF890300196FA8 /* Overview Views */ = {
@@ -697,6 +747,11 @@
 			children = (
 				6226937822EFFF3900A0A642 /* UserNotifications.framework */,
 				6226937A22EFFF3900A0A642 /* UserNotificationsUI.framework */,
+				AAB5B1655B26288CA87023A3 /* Pods_MasteryNotificationExtension.framework */,
+				C2C1C6ED60CC4E23C040C157 /* Pods_Mastery_iOS.framework */,
+				FDA2E534B13AFB4EE5A3C4E8 /* Pods_Mastery_iOSTests.framework */,
+				A7528FEC7D0437164D90CF11 /* Pods_Mastery_iOSUITests.framework */,
+				3813AF9B15E352A50495BD76 /* Pods_TaskIcons.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -813,6 +868,7 @@
 				6226937C22EFFF3900A0A642 /* MasteryNotificationExtension */,
 				6226937722EFFF3900A0A642 /* Frameworks */,
 				9CD53FBE22E0007100210C0F /* Products */,
+				60B6D2AB9524C12143C9E30E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -886,7 +942,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6226936122EFEFE800A0A642 /* Build configuration list for PBXNativeTarget "TaskIcons" */;
 			buildPhases = (
+				6AB6A2D0A0ADE8C5C77D8470 /* [CP] Check Pods Manifest.lock */,
 				6226935A22EFEFE800A0A642 /* Resources */,
+				65A0B3F6FCE34451EAD65F03 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -901,6 +959,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6226938622EFFF3900A0A642 /* Build configuration list for PBXNativeTarget "MasteryNotificationExtension" */;
 			buildPhases = (
+				0C75CCCA731A0FB4121D215F /* [CP] Check Pods Manifest.lock */,
 				6226937222EFFF3900A0A642 /* Sources */,
 				6226937322EFFF3900A0A642 /* Frameworks */,
 				6226937422EFFF3900A0A642 /* Resources */,
@@ -918,10 +977,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CD53FEA22E0007200210C0F /* Build configuration list for PBXNativeTarget "Mastery_iOS" */;
 			buildPhases = (
+				1C8FA4B3A736429AB8B80475 /* [CP] Check Pods Manifest.lock */,
 				9CD53FB922E0007100210C0F /* Sources */,
 				9CD53FBA22E0007100210C0F /* Frameworks */,
 				9CD53FBB22E0007100210C0F /* Resources */,
 				6226938922EFFF3900A0A642 /* Embed App Extensions */,
+				24969E84326A9F3583EF9AF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -938,6 +999,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CD53FED22E0007200210C0F /* Build configuration list for PBXNativeTarget "Mastery_iOSTests" */;
 			buildPhases = (
+				66FA8F0607E24BC7D46AAECB /* [CP] Check Pods Manifest.lock */,
 				9CD53FD222E0007200210C0F /* Sources */,
 				9CD53FD322E0007200210C0F /* Frameworks */,
 				9CD53FD422E0007200210C0F /* Resources */,
@@ -956,6 +1018,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CD53FF022E0007200210C0F /* Build configuration list for PBXNativeTarget "Mastery_iOSUITests" */;
 			buildPhases = (
+				8F211F12D6825E1647F666A7 /* [CP] Check Pods Manifest.lock */,
 				9CD53FDD22E0007200210C0F /* Sources */,
 				9CD53FDE22E0007200210C0F /* Frameworks */,
 				9CD53FDF22E0007200210C0F /* Resources */,
@@ -1187,6 +1250,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C75CCCA731A0FB4121D215F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MasteryNotificationExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C8FA4B3A736429AB8B80475 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mastery_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24969E84326A9F3583EF9AF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mastery_iOS/Pods-Mastery_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mastery_iOS/Pods-Mastery_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mastery_iOS/Pods-Mastery_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66FA8F0607E24BC7D46AAECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mastery_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AB6A2D0A0ADE8C5C77D8470 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskIcons-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F211F12D6825E1647F666A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mastery_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6226937222EFFF3900A0A642 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1342,6 +1535,7 @@
 /* Begin XCBuildConfiguration section */
 		6226935F22EFEFE800A0A642 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65EA6623AB7C4C8646F9FCB /* Pods-TaskIcons.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1358,6 +1552,7 @@
 		};
 		6226936022EFEFE800A0A642 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C50C7EEF18306CC9421EF4A /* Pods-TaskIcons.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1374,6 +1569,7 @@
 		};
 		6226938722EFFF3900A0A642 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641B2AAA341E24AF500EE845 /* Pods-MasteryNotificationExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79VHH58USY;
@@ -1393,6 +1589,7 @@
 		};
 		6226938822EFFF3900A0A642 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C45F9D35044907419D8F62D9 /* Pods-MasteryNotificationExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79VHH58USY;
@@ -1528,6 +1725,7 @@
 		};
 		9CD53FEB22E0007200210C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20EF1118DCBFCA2DF81AF05 /* Pods-Mastery_iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1547,6 +1745,7 @@
 		};
 		9CD53FEC22E0007200210C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B4FB0EA30CFD3838597A32 /* Pods-Mastery_iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1566,6 +1765,7 @@
 		};
 		9CD53FEE22E0007200210C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E1015624E841E3FB12DD47 /* Pods-Mastery_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1587,6 +1787,7 @@
 		};
 		9CD53FEF22E0007200210C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2394AA9297862BBBB3FF60 /* Pods-Mastery_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1608,6 +1809,7 @@
 		};
 		9CD53FF122E0007200210C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F335D06C865E5B42A3E0D8 /* Pods-Mastery_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1628,6 +1830,7 @@
 		};
 		9CD53FF222E0007200210C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1650694062D4908EEA64B0C /* Pods-Mastery_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

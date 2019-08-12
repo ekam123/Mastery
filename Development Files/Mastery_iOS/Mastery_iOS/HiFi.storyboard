@@ -1719,7 +1719,31 @@
                     <view key="view" contentMode="scaleToFill" id="huV-cR-rC8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icI-Hq-DUD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="448"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfp-xm-qzV" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pfp-xm-qzV" secondAttribute="trailing" id="JxB-WP-Tya"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pfp-xm-qzV" secondAttribute="bottom" id="a2d-NK-5na"/>
+                                    <constraint firstItem="Pfp-xm-qzV" firstAttribute="leading" secondItem="icI-Hq-DUD" secondAttribute="leading" id="tTR-yD-CkB"/>
+                                    <constraint firstItem="Pfp-xm-qzV" firstAttribute="top" secondItem="icI-Hq-DUD" secondAttribute="top" id="uqK-vg-hdu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="icI-Hq-DUD" firstAttribute="leading" secondItem="Beh-oe-3xd" secondAttribute="leading" id="RVA-3E-whM"/>
+                            <constraint firstItem="icI-Hq-DUD" firstAttribute="top" secondItem="Beh-oe-3xd" secondAttribute="top" id="VXD-B8-bCM"/>
+                            <constraint firstItem="icI-Hq-DUD" firstAttribute="height" secondItem="huV-cR-rC8" secondAttribute="height" multiplier="0.5" id="cHL-Qb-oCD"/>
+                            <constraint firstItem="icI-Hq-DUD" firstAttribute="trailing" secondItem="Beh-oe-3xd" secondAttribute="trailing" id="gP8-QL-JNp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Beh-oe-3xd"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="gcK-Id-jeV">
@@ -1730,10 +1754,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gradientColorView" destination="icI-Hq-DUD" id="9U0-6X-FM5"/>
+                        <outlet property="graphView" destination="Pfp-xm-qzV" id="XBG-KJ-z9Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGu-fb-oTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="2251"/>
+            <point key="canvasLocation" x="1505.7971014492755" y="2250.6696428571427"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8sl-Ew-rCI">
