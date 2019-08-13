@@ -1,2 +1,2 @@
 # Mastery
-Wow! What a Great App!
+A goal tracking app that where individual tasks within a goal can be timed and saved.
